@@ -8,6 +8,7 @@ import {
 import { useEffect, useState } from 'react';
 import Result from './Components/Result/Result';
 import Home from './Components/Home/Home';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   const [darkPreference, setDarkPreference] = useState(false)
@@ -35,6 +36,7 @@ function App() {
             <Route path="/search/:q">
               <Header darkMode={handleDarkMode} darkPreference={darkPreference} />
               <Result />
+              <Footer />
             </Route>
             <Route exact path="/">
               <Home darkMode={handleDarkMode} darkPreference={darkPreference}  />
