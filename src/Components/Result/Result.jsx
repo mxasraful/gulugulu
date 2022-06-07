@@ -39,7 +39,7 @@ const Result = () => {
             });
     }, [params])
 
-    console.log(searchResult, resultError)
+    console.log(params.q)
 
 
     return (
@@ -47,104 +47,104 @@ const Result = () => {
             {
                 loading ?
                     <div className='container mx-auto'>
-                        <div className="flex flex-row">
-                            <div className="w-2/3">
+                        <div className="md:flex">
+                            <div className="md:w-2/3">
                                 <div class=" rounded-md p-4 w-full mb-6 mt-12">
                                     <div class="animate-pulse flex space-x-4">
                                         <div class="flex flex-row w-full">
-                                            <div class="h-2 w-2/12 bg-slate-700 mr-2 rounded"></div>
-                                            <div class="h-2 w-2/12 bg-slate-700 mr-2 rounded"></div>
-                                            <div class="h-2 w-2/12 bg-slate-700 mr-2 rounded"></div>
-                                            <div class="h-2 w-2/12 bg-slate-700 mr-2 rounded"></div>
-                                            <div class="h-2 w-2/12 bg-slate-700 mr-2 rounded"></div>
-                                            <div class="h-2 w-2/12 bg-slate-700 mr-2 rounded"></div>
+                                            <div class="h-2 w-2/12 bg-slate-300 dark:bg-slate-700 mr-2 rounded"></div>
+                                            <div class="h-2 w-2/12 bg-slate-300 dark:bg-slate-700 mr-2 rounded"></div>
+                                            <div class="h-2 w-2/12 bg-slate-300 dark:bg-slate-700 mr-2 rounded"></div>
+                                            <div class="h-2 w-2/12 bg-slate-300 dark:bg-slate-700 mr-2 rounded"></div>
+                                            <div class="h-2 w-2/12 bg-slate-300 dark:bg-slate-700 mr-2 rounded"></div>
+                                            <div class="h-2 w-2/12 bg-slate-300 dark:bg-slate-700 mr-2 rounded"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" rounded-md p-4  mb-6 w-full">
                                     <div class="animate-pulse flex space-x-4">
-                                        <div class="rounded-full bg-slate-700 h-10 w-10"></div>
+                                        <div class="rounded-full bg-slate-300 dark:bg-slate-700 h-10 w-10"></div>
                                         <div class="flex-1 space-y-6 py-1">
-                                            <div class="h-2 bg-slate-700 rounded"></div>
+                                            <div class="h-2 bg-slate-300 dark:bg-slate-700 rounded"></div>
                                             <div class="space-y-3">
                                                 <div class="grid grid-cols-3 gap-4">
-                                                    <div class="h-2 bg-slate-700 rounded col-span-2"></div>
-                                                    <div class="h-2 bg-slate-700 rounded col-span-1"></div>
+                                                    <div class="h-2 bg-slate-300 dark:bg-slate-700 rounded col-span-2"></div>
+                                                    <div class="h-2 bg-slate-300 dark:bg-slate-700 rounded col-span-1"></div>
                                                 </div>
-                                                <div class="h-2 bg-slate-700 rounded"></div>
+                                                <div class="h-2 bg-slate-300 dark:bg-slate-700 rounded"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" rounded-md p-4 mb-6  w-full">
                                     <div class="animate-pulse flex space-x-4">
-                                        <div class="rounded-full bg-slate-700 h-10 w-10"></div>
+                                        <div class="rounded-full bg-slate-300 dark:bg-slate-700 h-10 w-10"></div>
                                         <div class="flex-1 space-y-6 py-1">
-                                            <div class="h-2 bg-slate-700 rounded"></div>
+                                            <div class="h-2 bg-slate-300 dark:bg-slate-700 rounded"></div>
                                             <div class="space-y-3">
                                                 <div class="grid grid-cols-3 gap-4">
-                                                    <div class="h-2 bg-slate-700 rounded col-span-2"></div>
-                                                    <div class="h-2 bg-slate-700 rounded col-span-1"></div>
+                                                    <div class="h-2 bg-slate-300 dark:bg-slate-700 rounded col-span-2"></div>
+                                                    <div class="h-2 bg-slate-300 dark:bg-slate-700 rounded col-span-1"></div>
                                                 </div>
-                                                <div class="h-2 bg-slate-700 rounded"></div>
+                                                <div class="h-2 bg-slate-300 dark:bg-slate-700 rounded"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" rounded-md p-4 mb-6 w-full">
                                     <div class="animate-pulse flex space-x-4">
-                                        <div class="rounded-full bg-slate-700 h-10 w-10"></div>
+                                        <div class="rounded-full bg-slate-300 dark:bg-slate-700 h-10 w-10"></div>
                                         <div class="flex-1 space-y-6 py-1">
-                                            <div class="h-2 bg-slate-700 rounded"></div>
+                                            <div class="h-2 bg-slate-300 dark:bg-slate-700 rounded"></div>
                                             <div class="space-y-3">
                                                 <div class="grid grid-cols-3 gap-4">
-                                                    <div class="h-2 bg-slate-700 rounded col-span-2"></div>
-                                                    <div class="h-2 bg-slate-700 rounded col-span-1"></div>
+                                                    <div class="h-2 bg-slate-300 dark:bg-slate-700 rounded col-span-2"></div>
+                                                    <div class="h-2 bg-slate-300 dark:bg-slate-700 rounded col-span-1"></div>
                                                 </div>
-                                                <div class="h-2 bg-slate-700 rounded"></div>
+                                                <div class="h-2 bg-slate-300 dark:bg-slate-700 rounded"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" rounded-md p-4 mb-6 w-full">
                                     <div class="animate-pulse flex space-x-4">
-                                        <div class="rounded-full bg-slate-700 h-10 w-10"></div>
+                                        <div class="rounded-full bg-slate-300 dark:bg-slate-700 h-10 w-10"></div>
                                         <div class="flex-1 space-y-6 py-1">
-                                            <div class="h-2 bg-slate-700 rounded"></div>
+                                            <div class="h-2 bg-slate-300 dark:bg-slate-700 rounded"></div>
                                             <div class="space-y-3">
                                                 <div class="grid grid-cols-3 gap-4">
-                                                    <div class="h-2 bg-slate-700 rounded col-span-2"></div>
-                                                    <div class="h-2 bg-slate-700 rounded col-span-1"></div>
+                                                    <div class="h-2 bg-slate-300 dark:bg-slate-700 rounded col-span-2"></div>
+                                                    <div class="h-2 bg-slate-300 dark:bg-slate-700 rounded col-span-1"></div>
                                                 </div>
-                                                <div class="h-2 bg-slate-700 rounded"></div>
+                                                <div class="h-2 bg-slate-300 dark:bg-slate-700 rounded"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-1/3 mt-16">
+                            <div className="w-1/3 mt-16  md:block hidden">
                                 <div class="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto">
                                     <div class="animate-pulse">
                                         <div className="flex">
-                                            <div class="rounded-md bg-slate-700 h-36 w-40 mb-6 mr-6"></div>
-                                            <div class="rounded-md bg-slate-700 h-36 w-40 mb-6"></div>
+                                            <div class="rounded-md bg-slate-300 dark:bg-slate-700 h-36 w-40 mb-6 mr-6"></div>
+                                            <div class="rounded-md bg-slate-300 dark:bg-slate-700 h-36 w-40 mb-6"></div>
                                         </div>
                                         <div class="flex-1 space-y-6 py-1">
-                                            <div class="h-2 bg-slate-700 rounded"></div>
+                                            <div class="h-2 bg-slate-300 dark:bg-slate-700 rounded"></div>
                                             <div class="space-y-3">
                                                 <div class="grid grid-cols-3 gap-4">
-                                                    <div class="h-2 bg-slate-700 rounded col-span-2"></div>
-                                                    <div class="h-2 bg-slate-700 rounded col-span-1"></div>
+                                                    <div class="h-2 bg-slate-300 dark:bg-slate-700 rounded col-span-2"></div>
+                                                    <div class="h-2 bg-slate-300 dark:bg-slate-700 rounded col-span-1"></div>
                                                 </div>
-                                                <div class="h-2 bg-slate-700 rounded"></div>
-                                                <div class="h-1 bg-slate-700 rounded"></div>
-                                                <div class="h-1 bg-slate-700 rounded"></div>
-                                                <div class="h-1 bg-slate-700 rounded"></div>
-                                                <div class="h-1 bg-slate-700 rounded"></div>
-                                                <div class="h-1 bg-slate-700 rounded"></div>
+                                                <div class="h-2 bg-slate-300 dark:bg-slate-700 rounded"></div>
+                                                <div class="h-1 bg-slate-300 dark:bg-slate-700 rounded"></div>
+                                                <div class="h-1 bg-slate-300 dark:bg-slate-700 rounded"></div>
+                                                <div class="h-1 bg-slate-300 dark:bg-slate-700 rounded"></div>
+                                                <div class="h-1 bg-slate-300 dark:bg-slate-700 rounded"></div>
+                                                <div class="h-1 bg-slate-300 dark:bg-slate-700 rounded"></div>
                                                 <div class="grid grid-cols-3 gap-4 mt-6">
-                                                    <div class="h-6 w-20 bg-slate-700 rounded"></div>
-                                                    <div class="h-6 w-20 ml-4 bg-slate-700 rounded"></div>
+                                                    <div class="h-6 w-20 bg-slate-300 dark:bg-slate-700 rounded"></div>
+                                                    <div class="h-6 w-20 ml-4 bg-slate-300 dark:bg-slate-700 rounded"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -188,8 +188,8 @@ const Result = () => {
                             }
                         </div>
                         {
-                            params?.q === "Mx Asraful" || "Asraful" || "asraful" || "mxasraful" || "" ?
-                                <div className="knowledge-panel basis-1/3 pl-7 pt-5 pb-24">
+                            params.q = "Mx Asraful" || "Asraful" || "asraful" || "mxasraful" ?
+                                <div className="knowledge-panel w-1/3 mt-16  md:block hidden pl-7 pt-5 pb-24">
                                     <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                                         <section class="">
                                             <div class="container px-5 py-2 mx-auto">
